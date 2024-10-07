@@ -31,4 +31,21 @@ passwordInput.addEventListener("keyup", () => {
         document.querySelector("#line1").style.background = "red";
         
     }
-})
+});
+
+const registerBtn = document.getElementById('register-btn');
+
+registerBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // prevent default form submission behavior
+
+  // Get the form data
+  const formData = new FormData(document.querySelector('form'));
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const password = formData.get('password');
+
+  // You can add validation logic here to check if the form data is valid
+
+  // Redirect to the desired page
+  window.location.href = 'welcome.html'; // replace with the desired page URL
+});
