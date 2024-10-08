@@ -49,3 +49,13 @@ registerBtn.addEventListener('click', (e) => {
   // Redirect to the desired page
   window.location.href = 'welcome.html'; // replace with the desired page URL
 });
+
+const loader = document.getElementById('loader');
+const registerBtns = document.getElementById('register-btn');
+
+registerBtns.addEventListener('click', () => {
+  loader.classList.add('show');
+  setTimeout(() => {
+    window.location.href = 'welcome.html';
+  }, 5000); // adjust the timeout duration as needed
+});
