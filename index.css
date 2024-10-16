@@ -98,7 +98,7 @@ header {
 .header-list ul li::after {
   content: "";
   height: 2px;
-  background: #cd5c5c;
+  background: #e4d8d8;
   display: block;
   margin: auto;
   transition: 0.5s;
